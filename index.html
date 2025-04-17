@@ -4,8 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea-House</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/aee48a0862.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+      }
+    </style>
   </head>
   <body>
-    <h1>Welcome!</h1>
+    <!-- Main Content -->
+    <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
+      <!-- Header Section -->
+      <header class="pt-10 mb-20 md:flex gap-8 justify-center items-center">
+        <!-- Text Content -->
+         <div class="">
+        <h1 class="text-5xl md:text-7xl font-bold">
+          It's good <br>
+          tea time at The <br>
+          Tea House
+          </h1>
+          <p class="text-[rgb(119,119,119)] py-7 w-3/4 text-lg">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+          <button class="text-xl text-white bg-gradient-to-r from-[rgb(255,137,56)] to-[rgb(255,0,0)] font-bold rounded-lg px-5 py-3">Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+        </div>
+        <!-- Image Content -->
+        <div class="relative">
+          <!-- Image -->
+           <div>
+            <img class="w-full" src="./images/banner.png" alt="">
+           </div>
+           <!-- Card -->
+            <div class="absolute flex items-center gap-2.5 bg-white rounded-lg shadow-lg px-2 py-2 md:px-10 lg:py-4 top-28 md:top-72 md:left-20">
+              <!-- icon -->
+               <div>
+                <i class="fa-solid fa-star text-[rgb(255,200,80)] text-3xl"></i>
+               </div>
+               <!-- Text -->
+                <div>
+                  <h2 class="lg:text-[30px] font-bold">5.00</h2>
+                  <p class="text-base text-[rgb(119,119,119)]">Trust Pilot</p>
+                </div>
+            </div>
+        </div>
+      </header>
+    </main>
   </body>
 </html>
